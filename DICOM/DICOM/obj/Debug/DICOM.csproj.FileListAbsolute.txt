@@ -1,0 +1,10 @@
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\DICOM.exe.config
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.csprojResolveAssemblyReference.cache
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.Form1.resources
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.Properties.Resources.resources
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.csproj.GenerateResource.Cache
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\DICOM.exe
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\DICOM.pdb
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\opendicom-sharp.dll
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.exe
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.pdb
