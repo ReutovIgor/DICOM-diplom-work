@@ -32,8 +32,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="opendicom-sharp">
-      <HintPath>..\DICOM-LIbrary\opendicom-sharp\bin\opendicom-sharp.dll</HintPath>
+    <Reference Include="EvilDICOM.Core">
+      <HintPath>..\DICOM-LIbrary\Evil-DICOM-master\EvilDICOM.Core\EvilDICOM.Core\bin\Debug\EvilDICOM.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

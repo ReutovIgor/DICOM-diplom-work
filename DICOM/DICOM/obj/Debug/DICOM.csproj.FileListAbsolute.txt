@@ -5,6 +5,7 @@ C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.Properties.Resources
 C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.csproj.GenerateResource.Cache
 C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\DICOM.exe
 C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\DICOM.pdb
-C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\opendicom-sharp.dll
 C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.exe
 C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\obj\Debug\DICOM.pdb
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\EvilDICOM.Core.dll
+C:\Users\Vextrell\Desktop\DICOM\DICOM\DICOM\bin\Debug\EvilDICOM.Core.pdb
