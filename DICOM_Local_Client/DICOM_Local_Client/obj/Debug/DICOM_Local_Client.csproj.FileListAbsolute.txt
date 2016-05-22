@@ -1,0 +1,9 @@
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\bin\Debug\DICOM_Local_Client.exe.config
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\obj\Debug\DICOM_Local_Client.Form1.resources
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\obj\Debug\DICOM_Local_Client.Properties.Resources.resources
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\obj\Debug\DICOM_Local_Client.csproj.GenerateResource.Cache
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\bin\Debug\DICOM_Local_Client.exe
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\bin\Debug\DICOM_Local_Client.pdb
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\obj\Debug\DICOM_Local_Client.exe
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\obj\Debug\DICOM_Local_Client.pdb
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Client\DICOM_Local_Client\obj\Debug\DICOM_Local_Client.csprojResolveAssemblyReference.cache

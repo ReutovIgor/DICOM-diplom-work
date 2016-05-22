@@ -1,0 +1,12 @@
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\DICOM_Local_Server.exe.config
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\DICOM_Local_Server.exe
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\DICOM_Local_Server.pdb
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\Npgsql.dll
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\Npgsql.xml
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\obj\Debug\DICOM_Local_Server.exe
+c:\users\project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\obj\Debug\DICOM_Local_Server.pdb
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Web.Http.dll
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Web.Http.xml
+C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Net.Http.Formatting.xml
