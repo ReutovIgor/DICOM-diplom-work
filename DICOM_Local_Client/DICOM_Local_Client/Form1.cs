@@ -18,6 +18,9 @@ namespace DICOM_Local_Client
     {
         string filePath = "";
         string fileName = "";
+        string deviceSN = "";
+        string deviceUsername = "";
+        string devicePassword = "";
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +30,9 @@ namespace DICOM_Local_Client
             this.PatienName.Text = "Alex";
             this.PatinetSurname.Text = "Brown";
             this.PatientUsername.Text = "Alex_Brown_1989";
+            this.deviceSN = "X-ray1";
+            this.deviceUsername = "XR1";
+            this.devicePassword = "ray1";
         }
 
         private void SelectFileButton_Click(object sender, EventArgs e)
@@ -43,8 +49,6 @@ namespace DICOM_Local_Client
             Stream fileStream = File.OpenRead(this.filePath);
             byte[] fileBuffer = new byte[fileStream.Length];
             fileStream.Read(fileBuffer, 0, (int)fileStream.Length);
-            //string path = "C:\\Users\\Project\\Documents\\Visual Studio 2013\\Projects\\DICOM_Local_Client\\DICOM_Local_Client\\bin\\Debug\\DCM files received\\CR-MONO1-10-chest_11112";
-            //File.WriteAllBytes(path, fileBuffer);
 
             //compose request description and conver to byte array
             Dictionary<string, dynamic> clientDescription = new Dictionary<string, dynamic>();
@@ -52,8 +56,14 @@ namespace DICOM_Local_Client
             clientDescription.Add("Surname", this.PatinetSurname.Text);
             clientDescription.Add("UserName", this.PatientUsername.Text);
             clientDescription.Add("DoB", this.PatientDoB.Value.Date.ToShortDateString());
-            clientDescription.Add("Filename", this.fileName);
-            clientDescription.Add("FileSize", fileBuffer.Length);
+            clientDescription.Add("FileName", this.fileName);
+            clientDescription.Add("FileSize", fileBuffer.Length.ToString());
+            var date = DateTime.Now;
+            clientDescription.Add("FileDate", date.ToShortDateString());
+            clientDescription.Add("DeviceSN", this.deviceSN);
+            clientDescription.Add("DeviceUsername", this.deviceUsername);
+            clientDescription.Add("DevicePassword", this.devicePassword);
+            
 
             string Clientdescritption = (new JavaScriptSerializer()).Serialize(clientDescription);
             byte[] description = System.Text.Encoding.Unicode.GetBytes(Clientdescritption);

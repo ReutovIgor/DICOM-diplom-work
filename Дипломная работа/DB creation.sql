@@ -1,5 +1,5 @@
 CREATE TABLE Files (
-	ID int NOT NULL,
+	ID SERIAL,
 	Name text,
 	path text,
 	date date,
@@ -7,15 +7,16 @@ CREATE TABLE Files (
 );
 
 CREATE TABLE Patients (
-	ID int NOT NULL,
+	ID SERIAL NOT NULL,
 	Name text,
 	Surname text,
+	Username text,
 	DoB date,
 	PRIMARY KEY (ID)
 );
 
 CREATE TABLE File_Patients (
-	ID int NOT NULL,
+	ID SERIAL NOT NULL,
 	ID_File int NOT NULL,
 	ID_Patient int NOT NULL,
 	PRIMARY KEY (ID),
@@ -24,7 +25,7 @@ CREATE TABLE File_Patients (
 );
 
 CREATE TABLE Authentication (
-	ID int NOT NULL,
+	ID SERIAL NOT NULL,
 	Login text,
 	Password text,
 	AuthToken text,
@@ -32,7 +33,7 @@ CREATE TABLE Authentication (
 );
 
 CREATE TABLE Personel (
-	ID int NOT NULL,
+	ID SERIAL NOT NULL,
 	Name text,
 	Surname text,
 	DoB date,
@@ -45,7 +46,7 @@ CREATE TABLE Personel (
 
 
 CREATE TABLE Equipment (
-	ID int NOT NULL,
+	ID SERIAL NOT NULL,
 	SerialNumber text,
 	ID_Auth int NOT NULL,
 	PRIMARY KEY (ID),
@@ -55,6 +56,6 @@ CREATE TABLE Equipment (
 INSERT INTO Authentication VALUES (1, 'Doctor1', 'doctor', 'Auth1');
 INSERT INTO Authentication VALUES (2, 'Doctor2', 'doctor', 'Auth2');
 INSERT INTO Authentication VALUES (3, 'Doctor3', 'doctor', 'Auth3');
-INSERT INTO Authentication VALUES (4, 'Doctor4', 'doctor', 'Auth4');
+INSERT INTO Authentication VALUES (4, 'X-ray1' , 'ray1'  , 'Auth4');
 
 INSERT INTO Personel VALUES (1, 'Вася', 'Пупкин', '05-15-2016', 'head', 4);

@@ -7,31 +7,71 @@ using Npgsql;
 
 namespace DICOM_Local_Server
 {
-    class DB_Controll
+    static class DB_Controll
     {
-        /*
-        using (var conn = new NpgsqlConnection("Host=localhost;Username=postgres;Password=DICOM;Database=DICOM_DB"))
+        static NpgsqlConnection database;
+        static Dictionary<string, string> queryTemplates;
+        static bool dbIsOpened;
+        static DB_Controll()
+        {
+            database = new NpgsqlConnection("Host=localhost;Username=postgres;Password=DICOM;Database=DICOM_DB");
+            queryTemplates = new Dictionary<string, string>()
             {
-                conn.Open();
-                using (var cmd = new NpgsqlCommand())
+                    {"check_device","SELECT ID FROM Authentication WHERE Login='<DeviceUsername>' AND Password='<DevicePassword>'"},
+                    {"add_file", "INSERT INTO files (name, path, date) VALUES ('<FileName>', '<FilePath>', '<FileDate>') RETURNING ID"},
+                    {"connect_file_patient", "INSERT INTO file_patients (id_file, id_patient) VALUES ('<fileId>', '<patienId>') RETURNING ID"},
+                    {"get_patienId", "SELECT ID FROM patients WHERE name='<Name>' AND surname='<Surname>' AND username='<UserName>'"}
+            };
+            dbIsOpened = false;
+        }
+
+        public static void openConnection() 
+        {
+            dbIsOpened = true;
+            database.Open();
+
+        }
+
+        public static bool isOpened()
+        {
+            return dbIsOpened;
+        }
+
+        public static Dictionary<int, Dictionary<string, dynamic>> SendRequest(string request, Dictionary<string, dynamic> data)
+        {
+            Dictionary<int, Dictionary<string, dynamic>> response = new Dictionary<int, Dictionary<string, dynamic>>();
+            string query = queryTemplates[request];
+            if (data != null)
+            {
+                foreach (var pair in data)
                 {
-                    cmd.Connection = conn;
-
-                    // Insert some data
-                    //cmd.CommandText = "SELECT * FROM files";
-                    //cmd.ExecuteNonQuery();
-
-                    // Retrieve all rows
-                    cmd.CommandText = "SELECT * FROM authentication";
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            Console.WriteLine(reader.GetString(0) + ' ' + reader.GetString(1) + ' ' + reader.GetString(2) + ' ' + reader.GetString(3));
-                        }
-                    }
+                    query = query.Replace("<" + pair.Key + ">", pair.Value);
                 }
             }
-            Console.ReadKey();*/
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = database;
+            cmd.CommandText = query;
+            using (var reader = cmd.ExecuteReader())
+            {
+                int rowNumber = 0;
+                while (reader.Read())
+                {
+                    Dictionary<string, dynamic> row = new Dictionary<string, dynamic>();
+                    int columnCount = reader.FieldCount;
+                    for(int i = 0; i < columnCount; i++)
+                    {
+                        row.Add(reader.GetName(i), reader.GetString(i));
+                    }
+                    response.Add(rowNumber, row);
+                }
+            }
+            return response;
+        }
+
+        public static void closeConnection()
+        {
+            dbIsOpened = false;
+            database.Close();
+        }
     }
 }

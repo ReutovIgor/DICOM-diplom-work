@@ -10,3 +10,16 @@ C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_
 C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Web.Http.xml
 C:\Users\Project\documents\visual studio 2013\Projects\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\DICOM_Local_Server.exe.config
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\obj\Debug\DICOM_Local_Server.exe
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\obj\Debug\DICOM_Local_Server.pdb
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\DICOM_Local_Server.exe
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\DICOM_Local_Server.pdb
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\Npgsql.dll
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Web.Http.dll
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\Npgsql.xml
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Web.Http.xml
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Project\Desktop\Project\DICOM_Local_Server\DICOM_Local_Server\obj\Debug\DICOM_Local_Server.csprojResolveAssemblyReference.cache
